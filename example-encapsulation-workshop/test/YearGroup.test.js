@@ -8,4 +8,14 @@ describe('YearGroup', () => {
         let myYearGroup = new YearGroup()
         expect(myYearGroup).to.be.an.instanceOf(YearGroup);
     })
+
+    it('should return the year passed into the constructor', () => {
+        let myYearGroup = new YearGroup(2019)
+        expect(myYearGroup._year).to.equal(2019);
+    })
+
+    it('should return headOfYear Initials', () => {
+        let myYearGroup = new YearGroup(2019, "DH")
+        expect(myYearGroup._headOfYear).to.equal("DH");
+    })
 })
