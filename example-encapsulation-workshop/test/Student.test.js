@@ -9,7 +9,7 @@ describe('Student', () => {
 
     beforeEach(() => {
         myStudent = new Student("Daniel Hunter", "11c")
-      });
+    });
 
     it('should allow an object to be instantiated from the class', () => {
         expect(myStudent).to.be.an.instanceOf(Student);
@@ -22,7 +22,7 @@ describe('Student', () => {
     it('should return yearGroup of the student (where yearGroup is two digits)', () => {
         expect(myStudent.getYearGroup()).to.equal("11");
     })
-    
+
     it('should return yearGroup of the student (where yearGroup is single digit)', () => {
         myStudent = new Student("Daniel Hunter", "1c")
         expect(myStudent.getYearGroup()).to.equal("01");

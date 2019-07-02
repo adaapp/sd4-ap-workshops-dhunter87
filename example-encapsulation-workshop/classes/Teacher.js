@@ -1,5 +1,5 @@
 class Teacher {
-    constructor(name, initials, subject){
+    constructor(name, initials, subject) {
         this._name = name;
         this._initials = initials;
         this._subject = subject;
@@ -11,7 +11,7 @@ class Teacher {
     }
 
     getInitials() {
-        return this._initials;  
+        return this._initials;
     }
 
     getSubject() {

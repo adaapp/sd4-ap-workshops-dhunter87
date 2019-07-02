@@ -7,7 +7,7 @@ class YearGroup {
 
     getYear() {
         return this._year;
-    }    
+    }
 
     getHeadOfYear() {
         return this._headOfYear;
