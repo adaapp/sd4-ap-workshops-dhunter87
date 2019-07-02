@@ -10,14 +10,14 @@ class Student {
         return this._name;
     }
 
+    getTutorGroup() {
+        return this._tutorGroup;
+    }
+
     getYearGroup(){
-        if(this._tutorGroup.length > 2){
-            var yearGroup = this._tutorGroup.slice(0,2);
-        }
-        else{
-            var yearGroup = "0" + this._tutorGroup.slice(0,1);
-        }
-        return yearGroup;
+        return this._tutorGroup.length > 2 ? 
+        this._tutorGroup.slice(0,2) : 
+        "0" + this._tutorGroup.slice(0,1);
     }
 
     getFormGroup() {
